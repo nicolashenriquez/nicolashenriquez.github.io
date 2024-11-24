@@ -3661,3 +3661,58 @@ body.is-preload #header:after {
   }
 
 }
+
+/* Contenedor general */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* Espaciado entre cada elemento */
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  /* Centrar la sección en la página */
+}
+
+/* Cada elemento */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Espaciado entre la imagen y el texto */
+}
+
+/* Imagen */
+.item span {
+  width: 25%;
+  /* La imagen ocupa el 25% del ancho del contenedor */
+}
+
+/* Texto */
+.item .text {
+  width: 75%;
+  /* El texto ocupa el resto del espacio */
+}
+
+.item h3 {
+  margin: 0 0 10px;
+  /* Espaciado debajo del título */
+  font-size: 1.5rem;
+}
+
+.item p {
+  margin: 0;
+  line-height: 1.5;
+  /* Mejora la legibilidad */
+}
+
+.section .item {
+  margin-bottom: 1px;
+  /* Reduce la distancia entre los divs */
+}
+
+.item, .item * {
+  margin: 5px !important;
+  padding: 5px !important;
+}
